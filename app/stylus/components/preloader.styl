@@ -1,0 +1,17 @@
+.preloader
+  position fixed
+  top 0
+  left 0
+  bottom 0
+  right 0
+  background-color #FAFAFA
+  z-index 999
+  +element(img)
+    position absolute
+    left 0
+    bottom 0
+    transform translate(-100%, 100%)
+    transition all .2s ease
+  &.done
+    display none
+    visibility hidden

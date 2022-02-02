@@ -1,0 +1,221 @@
+*
+  margin 0
+  padding 0
+  box-sizing border-box  
+a
+  text-decoration none
+.wrapper
+  position relative
+  font-family "SF Pro Display Regular", sans-serif
+  font-size 14px
+  color #282A33
+  padding-top 100px
+  padding-bottom 50px
+  line-height 1.4
+  background-color #FAFAFA
+  +mq(0, 1024px)
+    padding-top 30px
+    padding-bottom 30px
+.logo
+  img
+    +mq(0, 1024px)
+      display block
+      max-width 80px
+.container
+  max-width 1180px
+  padding 0 20px
+  margin 0 auto
+.header
+  display flex
+  justify-content space-between
+  align-items flex-start
+.title
+  font-size 36px
+  font-family "SF Pro Display Bold", sans-serif
+  line-height 1.4
+  margin 0
+  span
+    display block
+  +element(h1)
+    margin-bottom 30px
+    +mq(0, 1024px)
+      font-size 28px
+      margin-bottom 21px
+  +element(h2)
+    font-size 24px
+    margin-bottom 26px
+  +element(h3)
+    font-size 14px
+    margin-bottom 6px
+.p
+  font-size 14px
+  line-height 1.4
+.top
+  +element(holder)
+    display flex
+    flex-wrap wrap
+    padding-top 35px
+  +element(info)
+    width 50%
+    +mq(0, 1024px)
+      width 100%
+  +element(contacts)
+    display flex
+    flex-direction column
+    align-items center
+    flex-grow 1
+    padding-left 160px
+    +mq(0, 1024px)
+      padding-left 0
+      padding-top 21px
+      align-items flex-start
+  +element(contact)
+    margin-bottom 11px
+.social
+  +element(holder)
+    display flex
+    margin-top 14px
+  +element(icon)
+    display block
+    margin-right 17px
+    line-height 0
+.about
+  padding-top 35px
+  +element(wrapper)
+    position relative
+    padding-top 163px
+    +mq(0, 1024px)
+      padding-top 0px
+    &:before
+      content ''
+      position absolute
+      top -93px
+      left 0
+      width 100%
+      height 363px
+      background-image url(../images/ribbon-top.png)
+      background-size contain
+      background-repeat no-repeat
+    +mq(0, 768px)
+      &:before
+        width 108%
+        top -44px
+        margin 0 -14px
+        background-image url(../images/ribbon-top-mob.png)
+  +element(holder)
+    display flex
+    justify-content space-between
+    flex-wrap wrap    
+  +element(man)
+    flex-grow 1
+    max-width 315px
+    +mq(0, 1024px)
+      max-width 100%
+      display flex
+      justify-content center
+      padding 40px 0
+  +element(man-img)
+    position sticky
+    top 0
+    max-width 100%
+    +mq(0, 1024px)
+      max-width 150px
+.experience
+  flex-grow 1
+  +mq(0, 1024px)
+    width 100%
+  +element(item)
+    display flex
+    flex-direction column
+    align-items flex-start
+    & + &
+      margin-top 60px
+  +element(date)
+    color #828282
+    margin-bottom 6px
+  +element(post)
+    font-family "SF Pro Display Bold", sans-serif
+    margin-bottom 6px
+  +element(country)
+    margin-bottom 6px
+  +element(skills)
+    margin-bottom 1px
+  +element(link)
+    color #2F80ED
+    text-decoration underline
+.education
+  max-width 267px
+  width 100%
+  display flex
+  flex-direction column
+  align-items center
+  flex-grow 1
+  text-align center
+  +mq(0, 1024px)
+    max-width 100%
+    align-items flex-start
+  +element(holder)
+    margin-bottom -34px
+    +mq(0, 1024px)
+      display flex
+      flex-wrap wrap
+  +element(item)
+    max-width 150px
+    display flex
+    flex-direction column
+    align-items center
+    margin-bottom 34px
+    +mq(0, 1024px)
+      max-width 50%
+      width 50%
+      padding 0 20px
+  +element(img)
+    margin-bottom 6px
+  +element(name)
+    font-family "SF Pro Display Bold", sans-serif
+    margin-bottom 6px
+.skils
+  padding-top 35px
+  +element(wrapper)
+    position relative
+    padding-top 163px
+    +mq(0, 1024px)
+      padding-top 40px
+    &:before
+      content ''
+      position absolute
+      top 7px
+      left 0
+      width 100%
+      height 363px
+      background-image url(../images/ribbon-bottom.png)
+      background-size contain
+      background-repeat no-repeat
+    +mq(0, 768px)
+      &:before
+        width 108%
+        top 12px
+        margin 0 -14px
+        background-image url(../images/ribbon-bottom-mob.png)
+  +element(holder)
+    display flex
+    justify-content space-between
+    margin 0 -10px
+    +mq(0, 768px)
+      flex-direction column
+      margin-bottom -20px
+  +element(item)
+    width calc(25% - 20px)
+    margin 0 10px
+    +mq(0, 768px)
+      margin-bottom 20px
+      width 100%
+.footer
+  padding-top 200px
+  +mq(0, 1024px)
+    padding-top 40px
+  +element(inner)
+    display flex
+    justify-content center
+  +element(img)
+    max-width 100%

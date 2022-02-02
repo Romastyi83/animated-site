@@ -1,0 +1,69 @@
+.progress
+  position fixed
+  bottom 25px
+  right 25px
+  height 48px
+  width 48px
+  display flex
+  justify-content center
+  align-items center
+  border-radius 50%
+  overflow hidden
+  background-color #282A33
+  z-index 2
+  &:before
+    content ''
+    position absolute
+    left 50%
+    top -1%
+    width 51%
+    height 102%
+    background-color #D2233C
+    visibility hidden
+    opacity 0
+  &:after
+    content ''
+    position absolute
+    right 50%
+    top -1%
+    width 51%
+    height 102%
+    background-color #282A33
+  &.right
+    &:before
+      visibility visible
+      opacity 1
+    &:after
+      visibility hidden
+      opacity 0
+  &.up
+    cursor pointer
+    .progress__up
+      display block
+    .progress__text
+      display none
+  +element(inner)
+    position absolute
+    top 1px
+    right 1px
+    bottom 1px
+    left 1px
+    display flex
+    justify-content center
+    align-items center
+    border-radius 50%
+    background-color #fff
+    z-index 2
+  +element(filling)
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 50%
+    height 100%
+    background-color #D2233C
+    transform-origin 100% 50%
+    transform rotate(20deg)
+  +element(up)
+    z-index 2
+    display none
